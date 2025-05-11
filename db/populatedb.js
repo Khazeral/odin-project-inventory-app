@@ -27,7 +27,6 @@ CREATE TABLE IF NOT EXISTS comic_genre (
   FOREIGN KEY (comic_id) REFERENCES comic(id) ON DELETE CASCADE,
   FOREIGN KEY (genre_id) REFERENCES genre(id) ON DELETE CASCADE
 );
-
 `;
 
 async function main() {
